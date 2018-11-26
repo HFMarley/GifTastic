@@ -43,7 +43,7 @@ $(document).ready(function () {
   });
   //this function requests from the api database the giphs and creates the renderGiphs function. It then prepends the images. 
   function renderGiphs(searchTerm) {
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=xGP7bHH4jn5HpgV9NDfMgg1dQkkqfQsR&limit=9";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=xGP7bHH4jn5HpgV9NDfMgg1dQkkqfQsR&limit=9";
     $.ajax({
       url: queryURL,
       method: "GET"
